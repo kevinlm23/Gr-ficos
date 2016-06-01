@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>D3 PRUEBA 2</title>
+</head>
+<style>
+body{
+    width:1060px;
+    margin:50px auto;
+}
+path {  stroke: #fff; }
+path:hover {  opacity:0.9; }
+rect:hover {  fill:blue; }
+.axis {  font: 10px sans-serif; }
+.legend tr{    border-bottom:1px solid grey; }
+.legend tr:first-child{    border-top:1px solid grey; }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {  display: none; }
+.legend{
+    margin-bottom:76px;
+    display:inline-block;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+.legend td{
+    padding:4px 5px;
+    vertical-align:bottom;
+}
+.legendFreq, .legendPerc{
+    align:right;
+    width:50px;
+}
+
+</style>
+<body>
+    <center><h1>COLOMBIA MAYOR.</h1></center>
+    <center><h3>COSTOS Y PRESUPUESTOS</h3></center>
+    <br>
+    <br>
+    <div id='dashboard'>
+    </div>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="lib/grafico2.js"></script>
+    <br>
+    <br>
+    <br>
+    <div id="nota">
+        <h4 style="color:red">Nota:</h4>
+        <p>Gráfico de barras que muestra el capital mensual utilizado para el programa Colombia Mayor según el año elegido en la grafica de torta</p>
+    </div>
+
+</body>
+</html>
